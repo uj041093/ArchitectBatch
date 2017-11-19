@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.w2a.architectbatch1.CustomListeners.CustomListeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.w2a.architectbatch1.testCases.TC03">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="TC03"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.w2a.architectbatch1.testCases.TC03 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
