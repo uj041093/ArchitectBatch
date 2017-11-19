@@ -1,0 +1,15 @@
+com\w2a\architectbatch1\TestUtils\TestUtils.class
+com\w2a\architectbatch1\TestUtils\ExcelReader.class
+com\w2a\architectbatch1\TestUtils\DriverManager.class
+com\w2a\architectbatch1\Pages\GmailLoginPage.class
+com\w2a\architectbatch1\TestUtils\DriverFactory.class
+com\w2a\architectbatch1\TestUtils\PropertyFileManager.class
+com\w2a\architectbatch1\Pages\FacebookHomePage.class
+com\w2a\architectbatch1\Pages\GmailLandingPage.class
+com\w2a\architectbatch1\TestUtils\ExtentManager.class
+com\w2a\architectbatch1\Pages\BasePage.class
+com\w2a\architectbatch1\Pages\FacebookLandingPage.class
+com\w2a\architectbatch1\Pages\BasePage1.class
+com\w2a\architectbatch1\baseSetup\TestSetUp.class
+com\w2a\architectbatch1\TestUtils\GetData.class
+com\w2a\architectbatch1\CustomListeners\CustomListeners.class
