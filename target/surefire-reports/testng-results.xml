@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23225" started-at="2017-11-20T15:21:13Z" finished-at="2017-11-20T15:21:36Z">
+  <suite name="Suite" duration-ms="63581" started-at="2017-11-20T16:14:14Z" finished-at="2017-11-20T16:15:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="23225" started-at="2017-11-20T15:21:13Z" finished-at="2017-11-20T15:21:36Z">
+    <test name="Test" duration-ms="63581" started-at="2017-11-20T16:14:14Z" finished-at="2017-11-20T16:15:18Z">
       <class name="com.w2a.architectbatch1.testCases.TC03">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="setUp" is-config="true" duration-ms="406" started-at="2017-11-20T20:51:12Z" finished-at="2017-11-20T20:51:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="setUp" is-config="true" duration-ms="333" started-at="2017-11-20T21:44:14Z" finished-at="2017-11-20T21:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="beforeClass" is-config="true" duration-ms="16" started-at="2017-11-20T20:51:13Z" finished-at="2017-11-20T20:51:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-11-20T20:51:13Z" finished-at="2017-11-20T20:51:13Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-11-20T21:44:14Z" finished-at="2017-11-20T21:44:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="beforeMethod" is-config="true" duration-ms="13350" started-at="2017-11-20T20:51:13Z" finished-at="2017-11-20T20:51:26Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="beforeClass" is-config="true" duration-ms="16" started-at="2017-11-20T21:44:14Z" finished-at="2017-11-20T21:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="beforeMethod" is-config="true" duration-ms="50399" started-at="2017-11-20T21:44:14Z" finished-at="2017-11-20T21:45:04Z">
           <params>
             <param index="0">
               <value>
@@ -30,30 +30,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC03()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="TC03" duration-ms="7820" started-at="2017-11-20T20:51:26Z" finished-at="2017-11-20T20:51:34Z">
+        <test-method status="PASS" signature="TC03()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="TC03" duration-ms="11595" started-at="2017-11-20T21:45:04Z" finished-at="2017-11-20T21:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="afterMethod" is-config="true" duration-ms="792" started-at="2017-11-20T20:51:35Z" finished-at="2017-11-20T20:51:36Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="afterMethod" is-config="true" duration-ms="1021" started-at="2017-11-20T21:45:17Z" finished-at="2017-11-20T21:45:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC03 status=SUCCESS method=TC03.TC03()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68] output={null}]]]>
+                <![CDATA[[TestResult name=TC03 status=SUCCESS method=TC03.TC03()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-11-20T20:51:36Z" finished-at="2017-11-20T20:51:36Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-11-20T21:45:18Z" finished-at="2017-11-20T21:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-11-20T20:51:36Z" finished-at="2017-11-20T20:51:36Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-11-20T21:45:18Z" finished-at="2017-11-20T21:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@4f83df68]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-20T20:51:36Z" finished-at="2017-11-20T20:51:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.architectbatch1.testCases.TC03@42a48628]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-20T21:45:18Z" finished-at="2017-11-20T21:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
