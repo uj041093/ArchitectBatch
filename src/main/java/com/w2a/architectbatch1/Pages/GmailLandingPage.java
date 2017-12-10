@@ -17,9 +17,9 @@ public class GmailLandingPage extends BasePage{
 		return (GmailLandingPage) openPage(GmailLandingPage.class);
 	}
 	
-	public GmailLoginPage enterTheUserID() {
+	public GmailLoginPage enterTheUserID(String userID) {
 		
-		loginID.sendKeys("preraktheevil@gmail.com");
+		loginID.sendKeys(userID);
 		nextButton.click();
 		return (GmailLoginPage) openPage(GmailLoginPage.class);
 		

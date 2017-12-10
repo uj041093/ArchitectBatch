@@ -30,16 +30,16 @@ public class TestCase1 extends TestSetUp{
 		}
 
 	}*/
-	@Test(dataProviderClass=TestUtils.class,dataProvider="dp")
+	@Test(dataProviderClass=TestUtils.class,dataProvider="dm")
 	public void tc_02(Hashtable<String, String> data) {
 		
 		FacebookLandingPage fbLandingPage=new FacebookLandingPage().open();
-		String userName = data.get("username");
-		String password = data.get("password");
+	/*	String userName = data.get("Username");
+		String password = data.get("Password");
 		System.out.println(userName);
-		System.out.println(password);
+		System.out.println(password);*/
 		
-		FacebookLandingPage homepage=fbLandingPage.doLoginWithInValidCredentials(data.get("username"),data.get("password"));
+		FacebookLandingPage homepage=fbLandingPage.doLoginWithInValidCredentials(data.get("Username"),data.get("Password"));
 		
 	}
 

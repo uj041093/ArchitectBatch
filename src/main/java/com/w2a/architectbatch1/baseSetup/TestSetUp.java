@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -20,15 +19,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.w2a.architectbatch1.TestUtils.DriverFactory;
 import com.w2a.architectbatch1.TestUtils.DriverManager;
-import com.w2a.architectbatch1.TestUtils.ExcelReader;
+import com.w2a.architectbatch1.TestUtils.ExcelReaderOmi;
 import com.w2a.architectbatch1.TestUtils.ExtentManager;
 import com.w2a.architectbatch1.TestUtils.PropertyFileManager;
 
 public class TestSetUp {
 
 	protected static Properties configProperty;
-	public ExcelReader excel = new ExcelReader(
-			System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\simple.xlsx");
+//	public static ThreadLocal<ExcelReaderOmi> tlExcel;
+	public ExcelReaderOmi excel = new ExcelReaderOmi(System.getProperty("user.dir") + "\\simple.xlsx");
 	public static ExtentReports extent;
 	public static ThreadLocal<ExtentTest> classLevelReport = new ThreadLocal<ExtentTest>();
 	public static ThreadLocal<ExtentTest> testLevelReport = new ThreadLocal<ExtentTest>();
@@ -57,6 +56,9 @@ public class TestSetUp {
 
 		ExtentTest parent = extent.createTest(getClass().getSimpleName());
 		classLevelReport.set(parent);
+		//ExcelReaderOmi excel1 = new ExcelReaderOmi(System.getProperty("user.dir") + "\\simple.xlsx");
+		//tlExcel.set(excel1);
+		
 	}
 
 	@BeforeMethod

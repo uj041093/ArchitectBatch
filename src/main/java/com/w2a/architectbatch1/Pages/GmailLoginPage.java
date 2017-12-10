@@ -19,8 +19,8 @@ public class GmailLoginPage extends BasePage{
 		return ExpectedConditions.visibilityOf(password);
 	}
 	
-	public void EnterPassword(){
-		password.sendKeys("abcder");	
+	public void EnterPassword(String pwd){
+		password.sendKeys(pwd);	
 		
 		passwordNext.click();
 	

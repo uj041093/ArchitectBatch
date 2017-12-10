@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.w2a.architectbatch1.CustomListeners.CustomListeners"/>
-  </listeners>
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
     <classes>
       <class name="com.w2a.architectbatch1.testCases.TC03">
         <methods>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="TC03"/>
+          <include name="TC03" invocation-numbers="0"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="beforeTest"/>
@@ -19,6 +16,19 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.w2a.architectbatch1.testCases.TC03 -->
+      <class name="com.w2a.architectbatch1.testCases.TestCase1">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="tc_02"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.w2a.architectbatch1.testCases.TestCase1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

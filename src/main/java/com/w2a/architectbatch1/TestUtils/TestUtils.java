@@ -38,7 +38,7 @@ public class TestUtils extends TestSetUp{
 
 
 	}
-	@DataProvider(name = "dp")
+	/*@DataProvider(name = "dp")
 	public Object[][] getData(Method m) {
 
 		String sheetName = m.getName();
@@ -59,6 +59,41 @@ public class TestUtils extends TestSetUp{
 				table.put(excel.getCellData(sheetName, colNum, 1), excel.getCellData(sheetName, colNum, rowNum));
 				data[rowNum - 2][0] = table;
 			}
+
+		}
+	
+		return data;
+
+	}*/
+	
+	@DataProvider(name = "dm")
+	public Object[][] getData1(Method m) {
+		
+		//ExcelReaderOmi excel = tlExcel.get();
+
+		String methodName = m.getName();
+		//String sheetName = "tc_01";
+		excel.getCurrentTestCaseDetails(methodName);
+		int currentTestCaseRow = excel.currentTestCaseRowNum;
+		int rowCount= excel.rowCount;
+		int colCount =excel.columnCount;
+		
+		
+
+		Object[][] data = new Object[rowCount][1];//2 1
+
+		Hashtable<String, String> table = null;
+
+		for (int rowNum = 1; rowNum <= rowCount; rowNum++) {
+
+			table = new Hashtable<String, String>();
+
+			for (int colNum = 0; colNum <colCount; colNum++) {
+
+				table.put(excel.getCellData(currentTestCaseRow, colNum),excel.getCellData(currentTestCaseRow+rowNum, colNum));
+			}
+			
+			data[rowNum-1][0]=table;
 
 		}
 	
